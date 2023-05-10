@@ -1,5 +1,5 @@
-<?php include 'db_connect.php' ?>
 <?php 
+include 'db_connect.php';
 $qry = $conn->query("SELECT * FROM survey_set where id = ".$_GET['id'])->fetch_array();
 foreach($qry as $k => $v){
 	if($k == 'title')
@@ -19,7 +19,7 @@ foreach($qry as $k => $v){
 					<div class="container-fluid">
 						<p>Titulo: <b><?php echo $stitle ?></b></p>
 						<p class="mb-0">Descripcion:</p>
-						<small><?php echo $Descripcion; ?></small>
+						<small><?php echo $description; ?></small>
 						<p>Inicio: <b><?php echo date("M d, Y",strtotime($start_date)) ?></b></p>
 						<p>Fin: <b><?php echo date("M d, Y",strtotime($end_date)) ?></b></p>
 
