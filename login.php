@@ -47,7 +47,7 @@ header("location:index.php?page=home");
 	<div class="container-fluid h-custom">
 		<div class="row d-flex justify-content-center align-items-center h-100">
 		<div class="col-md-9 col-lg-6 col-xl-5">
-			<img src="./encuesta3.gif" class="img-fluid" alt="Sample image">
+			<img src="./encuesta5.gif" class="img-fluid" alt="Sample image">
 		</div>
 		<div id="login-center" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 			<form id="login-form">
