@@ -48,7 +48,7 @@ $answers = $conn->query("SELECT distinct(user_id) from answers where survey_id =
 							<div class="col-md-12">	
 								<span class="dropleft float-right">
 									<a class="fa fa-ellipsis-v text-dark" href="javascript:void(0)" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
-									<div class="dropdown-menu" style="">
+									<div class="dropdown-menu" >
 								        <a class="dropdown-item edit_question text-dark" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Editar</a>
 								        <div class="dropdown-divider"></div>
 								        <a class="dropdown-item delete_question text-dark" href="javascript:void(0)" data-id="<?php echo $row['id'] ?>">Eliminar</a>

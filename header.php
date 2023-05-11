@@ -5,9 +5,9 @@
   ob_start();
   $title = isset($_GET['page']) ? ucwords(str_replace("_", ' ', $_GET['page'])) : "Inicio";
   ?>
-  <title><?php echo $title ?> | Sistema de encuestas en línea</title>
+  <title><?php echo $title ?> | </title>
   <?php ob_end_flush() ?>
-
+  
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
@@ -35,4 +35,5 @@
   <script src="assets/plugins/jquery-ui/jquery-ui.min.js"></script>
  <!-- summernote -->
   <link rel="stylesheet" href="assets/plugins/summernote/summernote-bs4.min.css">
-</head>
+
+  

@@ -14,12 +14,11 @@ include('./db_connect.php');
   <title>Inicio | Sistema de encuestas en línea</title>
  	
 
-<?php include('./header.php'); ?>
-<?php 
-if(isset($_SESSION['login_id']))
-header("location:index.php?page=home");
-
-?>
+	<?php include('./header.php'); ?>
+	<?php 
+	if(isset($_SESSION['login_id']))
+	header("location:index.php?page=home");
+	?>
 
 </head>
 <style>
@@ -47,7 +46,7 @@ header("location:index.php?page=home");
 	<div class="container-fluid h-custom">
 		<div class="row d-flex justify-content-center align-items-center h-100">
 		<div class="col-md-9 col-lg-6 col-xl-5">
-			<img src="./encuesta5.gif" class="img-fluid" alt="Sample image">
+			<img src="./encuesta2.png" class="img-fluid" alt="Sample image">
 		</div>
 		<div id="login-center" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 			<form id="login-form">

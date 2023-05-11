@@ -5,7 +5,7 @@
         <span class="brand-text font-weight-light"><?php echo ucwords($_SESSION['login_firstname'].' '.$_SESSION['login_lastname']) ?></span>
 
       </a>
-      <div class="dropdown-menu" style="">
+      <div class="dropdown-menu" >
         <a class="dropdown-item manage_account" href="javascript:void(0)" data-id="<?php echo $_SESSION['login_id'] ?>">Administrar cuenta</a>
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="ajax.php?action=logout">Cerrar sesión</a>

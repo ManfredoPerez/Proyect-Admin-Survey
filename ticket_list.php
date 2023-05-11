@@ -59,7 +59,7 @@
 							<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
 		                      Action
 		                    </button>
-		                    <div class="dropdown-menu" style="">
+		                    <div class="dropdown-menu" >
 		                      <a class="dropdown-item view_ticket" href="./index.php?page=view_ticket&id=<?php echo $row['id'] ?>" data-id="<?php echo $row['id'] ?>">Ver</a>
 		                      <div class="dropdown-divider"></div>
 		                      <a class="dropdown-item" href="./index.php?page=edit_ticket&id=<?php echo $row['id'] ?>">Editar</a>
