@@ -215,6 +215,28 @@ Class Action {
 		if(isset($save))
 			return 1;
 	}
+	function save_survey_user(){
+		extract($_POST);
+		foreach($qid as $k => $v){
+			$data = " survey_set_id=$survey_id ";
+			$data .= ", question_id='$qid[$k]' ";
+			if(isset($_SESSION['login_id'])){
+				$data .= ", user_id='{$_SESSION['login_id']}' ";
+			}
+			if($type[$k] == 'check_opt'){
+				$data .= ", survey_user='[".implode("],[",$survey_user[$k])."]' ";
+			}else{
+				$data .= ", survey_user='$survey_user[$k]' ";
+			}
+			$save[] = $this->db->query("INSERT INTO survey_user SET $data ON DUPLICATE KEY UPDATE times_answered=times_answered+1");
+		}
+	
+		if(isset($save)){
+			return 1;
+		}
+	}
+	
+	
 	function delete_comment(){
 		extract($_POST);
 		$delete = $this->db->query("DELETE FROM comments where id = ".$id);
