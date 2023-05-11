@@ -5,7 +5,9 @@
   ob_start();
   $title = isset($_GET['page']) ? ucwords(str_replace("_", ' ', $_GET['page'])) : "Inicio";
   ?>
-  <title><?php echo $title ?> | </title>
+  
+  <title><?php echo $title ?> | Sistema de encuestas </title>
+  <link rel="icon" href="./logo.ico">
   <?php ob_end_flush() ?>
   
   <!-- Google Font: Source Sans Pro -->
