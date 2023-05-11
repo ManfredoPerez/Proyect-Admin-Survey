@@ -234,12 +234,14 @@ include('db_connect.php');
           </div>
           <!-- /.col -->
       </div>
-          
+      
 <?php endif; ?>
+<link rel="stylesheet" href="assets/dist/css/tabla.css"> 
+<div class="table-container">
+  <h2 class="table-title">Información de usuarios</h2>
 <?php
 $sql = "SELECT firstname, contact, email, type FROM users";
 $result = $conn->query($sql);
-
 // Crear la tabla HTML
 if ($result->num_rows > 0) {
   echo "<table class='table table-bordered'>";
