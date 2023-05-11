@@ -236,10 +236,13 @@ include('db_connect.php');
       </div>
       
 <?php endif; ?>
-<link rel="stylesheet" href="assets/dist/css/tabla.css"> 
-<div class="table-container">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/dist/css/tabla.css">
+  <div class="table-container">
   <h2 class="table-title">Información de usuarios</h2>
-<?php
+  <div class="table-responsive-sm">
+  <?php
 $sql = "SELECT firstname, contact, email, type FROM users";
 $result = $conn->query($sql);
 // Crear la tabla HTML
@@ -272,3 +275,7 @@ if ($result->num_rows > 0) {
 $conn->close();
 ?>
 <?php  ?>
+</div>
+</head>
+
+
