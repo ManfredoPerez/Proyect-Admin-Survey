@@ -12,25 +12,23 @@ include('./db_connect.php');
   
 
   <title>Inicio | Sistema de encuestas en línea</title>
-	
+ 	
 
-	<?php include('./header.php'); ?>
-	<?php 
-	if(isset($_SESSION['login_id']))
-	header("location:index.php?page=home");
-	?>
+<?php include('./header.php'); ?>
+<?php 
+if(isset($_SESSION['login_id']))
+header("location:index.php?page=home");
+
+?>
 
 </head>
 <style>
-	body{
-		background-color: white;
-	}
 	.divider:after,
 	.divider:before {
 		content: "";
 		flex: 1;
 		height: 1px;
-		background: #979998;
+		background: #eee;
 	}
 	.h-custom {
 		height: calc(100% - 73px);
@@ -40,30 +38,11 @@ include('./db_connect.php');
 		height: 100%;
 	}
 	}
-	.logo-container {
-      display: flex;
-      align-items: center;
-    }
-    
-    .logo-container img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    
-    .logo-container h1 {
-      font-size: 24px;
-      margin: 0;
-    }
-	
 
 </style>
 
 <body>
 	<main id="main" >
-	<div class="logo-container">
-		<img src="./logo.ico" alt="logo">
-		<h1>Sistema de encuestas en línea</h1>
-		</div>
 	<section class="vh-100">
 	<div class="container-fluid h-custom">
 		<div class="row d-flex justify-content-center align-items-center h-100">
@@ -73,7 +52,7 @@ include('./db_connect.php');
 		<div id="login-center" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 			<form id="login-form">
 			<div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-			<p class="lead fw-normal mb-0 me-3" style="color: black; font-family: Montserrat, sans-serif; font-weight: bold; font-size: 20px;">Iniciar Sesión</p>
+				<p class="lead fw-normal mb-0 me-3"> Iniciar Sesion</p>
 			</div>
 
 			<div class="divider d-flex align-items-center my-4">
