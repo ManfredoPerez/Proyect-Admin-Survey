@@ -8,6 +8,8 @@
   <title><?php echo $title ?> | Sistema de encuestas en línea</title>
   <?php ob_end_flush() ?>
 
+  <link rel="icon" href="./logo.jpeg">
+
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->

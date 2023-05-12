@@ -28,7 +28,7 @@ header("location:index.php?page=home");
 		content: "";
 		flex: 1;
 		height: 1px;
-		background: #eee;
+		background: #979998;
 	}
 	.h-custom {
 		height: calc(100% - 73px);
@@ -51,8 +51,9 @@ header("location:index.php?page=home");
 		</div>
 		<div id="login-center" class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
 			<form id="login-form">
+
 			<div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-start">
-				<p class="lead fw-normal mb-0 me-3"> Iniciar Sesion</p>
+				<h4> Iniciar Sesion</h4>
 			</div>
 
 			<div class="divider d-flex align-items-center my-4">
@@ -88,8 +89,9 @@ header("location:index.php?page=home");
 		</div>
 		</div>
 	</div>
-	<div
-		class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+	
+	<div 
+		class=" d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
 		<!-- Copyright -->
 		<div class="text-white mb-3 mb-md-0">
 		Copyright © 2023. Grupo Administracion de Tecnologias
